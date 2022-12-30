@@ -1,0 +1,32 @@
+PODS:
+  - IHProgressHUD (0.1.4)
+  - Realm (10.33.0):
+    - Realm/Headers (= 10.33.0)
+  - Realm/Headers (10.33.0)
+  - RealmSwift (10.33.0):
+    - Realm (= 10.33.0)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+
+DEPENDENCIES:
+  - IHProgressHUD
+  - RealmSwift
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - IHProgressHUD
+    - Realm
+    - RealmSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  IHProgressHUD: a01846bfbb581c761c79747c67b08387c3bdfae3
+  Realm: d4f810e161fa2c2c589b9860b6eb09238deacd73
+  RealmSwift: cef9946f09f2333a8f2ac8bac4f8de52fb9f5ac3
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+
+PODFILE CHECKSUM: a68220f023778495902b9b7455b222a68dc301ad
+
+COCOAPODS: 1.11.3
