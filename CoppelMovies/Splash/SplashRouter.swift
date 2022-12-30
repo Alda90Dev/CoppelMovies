@@ -42,7 +42,8 @@ class SplashRouter: SplashRouterProtocol {
 private extension SplashRouter {
     
     func validateUser(from view: SplashViewProtocol) {
-        Defaults.shared.user.isEmpty ? goToLogin(from: view) :  goToHome(from: view)
+        debugPrint( Defaults.shared.user)
+        Defaults.shared.user.isEmpty ? goToLogin(from: view) : goToHome(from: view)
     }
 
     func goToLogin(from view: SplashViewProtocol) {

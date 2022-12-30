@@ -73,6 +73,10 @@ class HomeRouter: HomeRouterProtocol {
     }
     
     func logOut(from view: HomeViewProtocol) {
-        
+        if let vc = view as? UIViewController {
+            let loginView = LoginRouter.createLoginModule()
+            loginView.modalPresentationStyle = .fullScreen
+            vc.present(loginView, animated: true)
+        }
     }
 }
