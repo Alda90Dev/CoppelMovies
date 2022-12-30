@@ -16,6 +16,7 @@ struct Content {
     static let errorMessage: String = "We are sorry, and error has ocurred!"
     static let moviesTitle: String = "Movies"
     static let favoritesTitle: String = "Mis Favoritos"
+    static let profileTitle: String = "Profile"
     static let btnVideos: String = "Ver videos"
     static let productions: String = "Production Companies"
     

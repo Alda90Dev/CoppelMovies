@@ -16,6 +16,12 @@
 		B85A63EE295F8B5D0065C1BB /* FavoritesPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63ED295F8B5D0065C1BB /* FavoritesPresenterOutput.swift */; };
 		B85A63F0295F8B8F0065C1BB /* FavoritesPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63EF295F8B8F0065C1BB /* FavoritesPresenterInput.swift */; };
 		B85A63F2295F8BB80065C1BB /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63F1295F8BB80065C1BB /* FavoritesView.swift */; };
+		B85A63F5295F91E40065C1BB /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63F4295F91E40065C1BB /* ProfileRouter.swift */; };
+		B85A63F7295F921B0065C1BB /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63F6295F921B0065C1BB /* ProfileInteractor.swift */; };
+		B85A63FA295F92640065C1BB /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63F9295F92640065C1BB /* ProfilePresenter.swift */; };
+		B85A63FC295F92B00065C1BB /* ProfilePresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63FB295F92B00065C1BB /* ProfilePresenterOutput.swift */; };
+		B85A63FE295F92CC0065C1BB /* ProfilePresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63FD295F92CC0065C1BB /* ProfilePresenterInput.swift */; };
+		B85A6400295F92EC0065C1BB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63FF295F92EC0065C1BB /* ProfileView.swift */; };
 		B8657422295D0A80003D437F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8657421295D0A80003D437F /* AppDelegate.swift */; };
 		B865742B295D0A82003D437F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B865742A295D0A82003D437F /* Assets.xcassets */; };
 		B865742E295D0A82003D437F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B865742C295D0A82003D437F /* LaunchScreen.storyboard */; };
@@ -78,6 +84,12 @@
 		B85A63ED295F8B5D0065C1BB /* FavoritesPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenterOutput.swift; sourceTree = "<group>"; };
 		B85A63EF295F8B8F0065C1BB /* FavoritesPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenterInput.swift; sourceTree = "<group>"; };
 		B85A63F1295F8BB80065C1BB /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		B85A63F4295F91E40065C1BB /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		B85A63F6295F921B0065C1BB /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		B85A63F9295F92640065C1BB /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		B85A63FB295F92B00065C1BB /* ProfilePresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenterOutput.swift; sourceTree = "<group>"; };
+		B85A63FD295F92CC0065C1BB /* ProfilePresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenterInput.swift; sourceTree = "<group>"; };
+		B85A63FF295F92EC0065C1BB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B865741E295D0A80003D437F /* CoppelMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoppelMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8657421295D0A80003D437F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B865742A295D0A82003D437F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,6 +205,27 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		B85A63F3295F91C70065C1BB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B85A63F8295F92520065C1BB /* Presenter */,
+				B85A63F4295F91E40065C1BB /* ProfileRouter.swift */,
+				B85A63F6295F921B0065C1BB /* ProfileInteractor.swift */,
+				B85A63FF295F92EC0065C1BB /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B85A63F8295F92520065C1BB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B85A63F9295F92640065C1BB /* ProfilePresenter.swift */,
+				B85A63FB295F92B00065C1BB /* ProfilePresenterOutput.swift */,
+				B85A63FD295F92CC0065C1BB /* ProfilePresenterInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		B8657415295D0A80003D437F = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +247,7 @@
 		B8657420295D0A80003D437F /* CoppelMovies */ = {
 			isa = PBXGroup;
 			children = (
+				B85A63F3295F91C70065C1BB /* Profile */,
 				B85A63E5295F89250065C1BB /* Favorites */,
 				B8867F20295E798800BFCA66 /* Detail */,
 				B8867F11295E507900BFCA66 /* Home */,
@@ -561,6 +595,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85A63F5295F91E40065C1BB /* ProfileRouter.swift in Sources */,
+				B85A63FC295F92B00065C1BB /* ProfilePresenterOutput.swift in Sources */,
 				B8657455295D2AE9003D437F /* LoginPresenter.swift in Sources */,
 				B8867F33295EB69600BFCA66 /* MovieDataCell.swift in Sources */,
 				B8657465295D2EA2003D437F /* UIViewController+AlertController.swift in Sources */,
@@ -569,6 +605,7 @@
 				B85A63EC295F8A930065C1BB /* FavoritesPresenter.swift in Sources */,
 				B8867F22295E79A500BFCA66 /* DetailRouter.swift in Sources */,
 				B8867F0A295E4E0400BFCA66 /* ComposableSectionDataSource.swift in Sources */,
+				B85A63FA295F92640065C1BB /* ProfilePresenter.swift in Sources */,
 				B8867F1D295E518D00BFCA66 /* HomePresenterInput.swift in Sources */,
 				B865743A295D1A08003D437F /* SplashPresenter.swift in Sources */,
 				B8657449295D23FE003D437F /* NetworkResult.swift in Sources */,
@@ -576,6 +613,7 @@
 				B8867F06295E4D8A00BFCA66 /* ComposableSectionOutput.swift in Sources */,
 				B8657440295D2285003D437F /* TokenResponse.swift in Sources */,
 				B8657438295D1921003D437F /* SplashRouter.swift in Sources */,
+				B85A6400295F92EC0065C1BB /* ProfileView.swift in Sources */,
 				B865744B295D2431003D437F /* NetworkRouter.swift in Sources */,
 				B8867F30295E89C800BFCA66 /* ImageCell.swift in Sources */,
 				B8867F1B295E515500BFCA66 /* HomePresenterOutput.swift in Sources */,
@@ -598,6 +636,7 @@
 				B8867F39295ED1BA00BFCA66 /* ProductionImageCell.swift in Sources */,
 				B8657463295D2E79003D437F /* UITextField+Combine.swift in Sources */,
 				B8867F1F295E51A900BFCA66 /* HomeView.swift in Sources */,
+				B85A63F7295F921B0065C1BB /* ProfileInteractor.swift in Sources */,
 				B865746B295D7F56003D437F /* ImageCatalog.swift in Sources */,
 				B8657442295D229E003D437F /* Account.swift in Sources */,
 				B8867F13295E508E00BFCA66 /* HomeRouter.swift in Sources */,
@@ -605,6 +644,7 @@
 				B85A63E1295F62E60065C1BB /* RealmManager.swift in Sources */,
 				B8657459295D2B56003D437F /* LoginPresenterInput.swift in Sources */,
 				B8657452295D287F003D437F /* Defaults.swift in Sources */,
+				B85A63FE295F92CC0065C1BB /* ProfilePresenterInput.swift in Sources */,
 				B8657446295D2304003D437F /* LoginInteractor.swift in Sources */,
 				B865745C295D2B8B003D437F /* LoginView.swift in Sources */,
 				B85A63DF295F61C50065C1BB /* MovieObject.swift in Sources */,

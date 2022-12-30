@@ -66,7 +66,10 @@ class HomeRouter: HomeRouterProtocol {
     }
     
     func goToProfile(from view: HomeViewProtocol) {
-       
+        if let vc = view as? UIViewController {
+            let homeView = ProfileRouter.createProfileModule()
+            vc.present(homeView, animated: true)
+        }
     }
     
     func logOut(from view: HomeViewProtocol) {
