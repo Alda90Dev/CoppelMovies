@@ -43,9 +43,6 @@ class DetailRouter: DetailRouterProtocol {
     }
 
     func goToVideos(from view: DetailViewProtocol, id: Int) {
-        if let vc = view as? UIViewController {
-            let videosView = VideosRouter.createVideosModule(id: id)
-            vc.present(videosView, animated: true)
-        }
+        
     }
 }

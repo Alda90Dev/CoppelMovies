@@ -32,16 +32,21 @@ class RealmManager {
     }
     
     func save(movie: Movie) {
-        let object = convertMovieToMovieObject(movie: movie)
         
-        RealmManager.realm.beginWrite()
-        RealmManager.realm.add(object)
-        do {
-            try RealmManager.realm.commitWrite()
-        } catch {
-            debugPrint("Could not write to database: ", error)
+        guard let _ = RealmManager.realm.object(ofType: MovieObject.self, forPrimaryKey: movie.id) else {
+            let object = convertMovieToMovieObject(movie: movie)
+            
+            RealmManager.realm.beginWrite()
+            RealmManager.realm.add(object)
+            do {
+                try RealmManager.realm.commitWrite()
+            } catch {
+                debugPrint("Could not write to database: ", error)
+            }
+            return
         }
         
+        return
     }
     
     func render() -> [Movie] {

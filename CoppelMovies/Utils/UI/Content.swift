@@ -15,6 +15,7 @@ struct Content {
     static let logIn: String = "Log In"
     static let errorMessage: String = "We are sorry, and error has ocurred!"
     static let moviesTitle: String = "Movies"
+    static let favoritesTitle: String = "Mis Favoritos"
     static let btnVideos: String = "Ver videos"
     static let productions: String = "Production Companies"
     
@@ -22,6 +23,7 @@ struct Content {
         static let okMessage: String = "Ok"
         static let alertMessage: String = "What do you want to do?"
         static let viewProfile: String = "View Profile"
+        static let viewFavorites: String = "View Favorites"
         static let logOut: String = "Log out"
         static let cancel: String = "Cancel"
     }

@@ -47,6 +47,11 @@ class HomePresenter: HomePresenterProtocol {
             self.router?.goToDetail(from: self.view!, movie: movie)
         }.store(in: &self.subscriptions)
         
+        input.goToFavorites.sink { [weak self] in
+            guard let self = self else { return }
+            self.router?.goToFavorites(from: self.view!)
+        }.store(in: &self.subscriptions)
+        
         input.goToProfile.sink { [weak self] in
             self?.goToProfile()
         }.store(in: &self.subscriptions)

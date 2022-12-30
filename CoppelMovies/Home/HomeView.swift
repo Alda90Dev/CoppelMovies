@@ -179,6 +179,10 @@ private extension HomeView {
         alert.addAction(UIAlertAction(title: Content.alert.viewProfile, style: .default, handler: { [weak self] (_) in
             self?.presenterInput.goToProfile.send()
         }))
+        
+        alert.addAction(UIAlertAction(title: Content.alert.viewFavorites, style: .default, handler: { [weak self] (_) in
+            self?.presenterInput.goToFavorites.send()
+        }))
 
         alert.addAction(UIAlertAction(title: Content.alert.logOut, style: .destructive, handler: { [weak self] (_) in
             self?.presenterInput.logOut.send()
@@ -194,4 +198,4 @@ private extension HomeView {
     }
 }
 
-extension HomeView: HomeViewProtocol { }
+extension FavoritesView: FavoritesViewProtocol { }

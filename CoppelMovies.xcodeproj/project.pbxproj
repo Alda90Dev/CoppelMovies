@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		90E7F9BEEA00F33D6C721EF1 /* Pods_CoppelMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61702473D92B87F4620D9AF /* Pods_CoppelMovies.framework */; };
 		B85A63DF295F61C50065C1BB /* MovieObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63DE295F61C50065C1BB /* MovieObject.swift */; };
 		B85A63E1295F62E60065C1BB /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63E0295F62E60065C1BB /* RealmManager.swift */; };
+		B85A63E7295F893A0065C1BB /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63E6295F893A0065C1BB /* FavoritesRouter.swift */; };
+		B85A63E9295F89F90065C1BB /* FavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63E8295F89F90065C1BB /* FavoritesInteractor.swift */; };
+		B85A63EC295F8A930065C1BB /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63EB295F8A930065C1BB /* FavoritesPresenter.swift */; };
+		B85A63EE295F8B5D0065C1BB /* FavoritesPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63ED295F8B5D0065C1BB /* FavoritesPresenterOutput.swift */; };
+		B85A63F0295F8B8F0065C1BB /* FavoritesPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63EF295F8B8F0065C1BB /* FavoritesPresenterInput.swift */; };
+		B85A63F2295F8BB80065C1BB /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A63F1295F8BB80065C1BB /* FavoritesView.swift */; };
 		B8657422295D0A80003D437F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8657421295D0A80003D437F /* AppDelegate.swift */; };
 		B865742B295D0A82003D437F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B865742A295D0A82003D437F /* Assets.xcassets */; };
 		B865742E295D0A82003D437F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B865742C295D0A82003D437F /* LaunchScreen.storyboard */; };
@@ -66,6 +72,12 @@
 		76ED82246777DE19E2DB17E5 /* Pods-CoppelMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoppelMovies.debug.xcconfig"; path = "Target Support Files/Pods-CoppelMovies/Pods-CoppelMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		B85A63DE295F61C50065C1BB /* MovieObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObject.swift; sourceTree = "<group>"; };
 		B85A63E0295F62E60065C1BB /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B85A63E6295F893A0065C1BB /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
+		B85A63E8295F89F90065C1BB /* FavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesInteractor.swift; sourceTree = "<group>"; };
+		B85A63EB295F8A930065C1BB /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		B85A63ED295F8B5D0065C1BB /* FavoritesPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenterOutput.swift; sourceTree = "<group>"; };
+		B85A63EF295F8B8F0065C1BB /* FavoritesPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenterInput.swift; sourceTree = "<group>"; };
+		B85A63F1295F8BB80065C1BB /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		B865741E295D0A80003D437F /* CoppelMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoppelMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8657421295D0A80003D437F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B865742A295D0A82003D437F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,6 +172,27 @@
 			path = RealmManager;
 			sourceTree = "<group>";
 		};
+		B85A63E5295F89250065C1BB /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				B85A63EA295F8A820065C1BB /* Presenter */,
+				B85A63E6295F893A0065C1BB /* FavoritesRouter.swift */,
+				B85A63E8295F89F90065C1BB /* FavoritesInteractor.swift */,
+				B85A63F1295F8BB80065C1BB /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		B85A63EA295F8A820065C1BB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B85A63EB295F8A930065C1BB /* FavoritesPresenter.swift */,
+				B85A63ED295F8B5D0065C1BB /* FavoritesPresenterOutput.swift */,
+				B85A63EF295F8B8F0065C1BB /* FavoritesPresenterInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		B8657415295D0A80003D437F = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +214,7 @@
 		B8657420295D0A80003D437F /* CoppelMovies */ = {
 			isa = PBXGroup;
 			children = (
+				B85A63E5295F89250065C1BB /* Favorites */,
 				B8867F20295E798800BFCA66 /* Detail */,
 				B8867F11295E507900BFCA66 /* Home */,
 				B8867EFD295E2DF500BFCA66 /* CollectionView */,
@@ -531,6 +565,8 @@
 				B8867F33295EB69600BFCA66 /* MovieDataCell.swift in Sources */,
 				B8657465295D2EA2003D437F /* UIViewController+AlertController.swift in Sources */,
 				B8867F00295E2E3000BFCA66 /* MovieCell.swift in Sources */,
+				B85A63F2295F8BB80065C1BB /* FavoritesView.swift in Sources */,
+				B85A63EC295F8A930065C1BB /* FavoritesPresenter.swift in Sources */,
 				B8867F22295E79A500BFCA66 /* DetailRouter.swift in Sources */,
 				B8867F0A295E4E0400BFCA66 /* ComposableSectionDataSource.swift in Sources */,
 				B8867F1D295E518D00BFCA66 /* HomePresenterInput.swift in Sources */,
@@ -545,10 +581,12 @@
 				B8867F1B295E515500BFCA66 /* HomePresenterOutput.swift in Sources */,
 				B8867F35295EB74B00BFCA66 /* PaddingLabel.swift in Sources */,
 				B8867F19295E512F00BFCA66 /* HomePresenter.swift in Sources */,
+				B85A63F0295F8B8F0065C1BB /* FavoritesPresenterInput.swift in Sources */,
 				B8867F10295E4E9500BFCA66 /* ComposableSection.swift in Sources */,
 				B8867F17295E50FC00BFCA66 /* HomeInteractor.swift in Sources */,
 				B8657422295D0A80003D437F /* AppDelegate.swift in Sources */,
 				B8867F03295E4BEC00BFCA66 /* Movie.swift in Sources */,
+				B85A63E9295F89F90065C1BB /* FavoritesInteractor.swift in Sources */,
 				B8867F0C295E4E4C00BFCA66 /* ComposableSectionLayouts.swift in Sources */,
 				B8657444295D22D5003D437F /* LoginRouter.swift in Sources */,
 				B8867F37295EC8DD00BFCA66 /* ProductionCell.swift in Sources */,
@@ -572,9 +610,11 @@
 				B85A63DF295F61C50065C1BB /* MovieObject.swift in Sources */,
 				B8867F0E295E4E7200BFCA66 /* ComposableSectionDelegate.swift in Sources */,
 				B8867F2B295E7D9000BFCA66 /* DetailPresenterInput.swift in Sources */,
+				B85A63EE295F8B5D0065C1BB /* FavoritesPresenterOutput.swift in Sources */,
 				B8657460295D2D01003D437F /* TextFieldWithPadding.swift in Sources */,
 				B8657457295D2B31003D437F /* LoginPresenterOutput.swift in Sources */,
 				B8867EFC295E1F6C00BFCA66 /* UIViewController+JGProgressHUD.swift in Sources */,
+				B85A63E7295F893A0065C1BB /* FavoritesRouter.swift in Sources */,
 				B865743C295D1A66003D437F /* SplashView.swift in Sources */,
 				B8867F29295E7D5800BFCA66 /* DetailPresenterOutput.swift in Sources */,
 			);

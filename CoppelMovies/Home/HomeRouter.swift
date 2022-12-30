@@ -14,6 +14,7 @@ protocol HomeRouterProtocol {
     static func createHomeModule() -> UIViewController
     func goToDetail(from view: HomeViewProtocol, movie: Movie)
     func goToProfile(from view: HomeViewProtocol)
+    func goToFavorites(from view: HomeViewProtocol)
     func logOut(from view: HomeViewProtocol)
 }
 
@@ -54,6 +55,14 @@ class HomeRouter: HomeRouterProtocol {
             vc.navigationController?.pushViewController(detailView, animated: false)
         }
         
+    }
+    
+    func goToFavorites(from view: HomeViewProtocol) {
+        let favoritesView = FavoritesRouter.createFavoritesModule()
+        
+        if let vc = view as? UIViewController {
+            vc.navigationController?.pushViewController(favoritesView, animated: true)
+        }
     }
     
     func goToProfile(from view: HomeViewProtocol) {
